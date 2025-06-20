@@ -1,6 +1,99 @@
 #resmio-test-335 {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    justify-items: center;
     justify-self: center;
-    margin: 100px;
+    margin-top: 20px;
+}
+
+.test {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    height: 150px;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.logo {
+    height: 120px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.menu-item {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    color: #224738;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.menu-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width 1s ease;
+}
+
+.menu-item:hover::after {
+    width: 100%;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.social-item {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+.social-item:hover {
+    color: #224837;
 }
