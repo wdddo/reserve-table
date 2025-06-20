@@ -6,19 +6,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>Titel</div>
-<!-- Reservation button placeholder -->
-<div id="resmio-button"
-  data-resmio-button="test-335"
-  data-resmio-buttonShadow="true"
-  data-resmio-borderRadius="5"
-  data-resmio-borderWidth="0"
-  data-resmio-borderColor="#FFFFFF"
-  data-resmio-buttonColor="#00A7C4"
-  data-resmio-fontColor="#FFFFFF"
-  data-resmio-fontSize="14px"
-  data-resmio-buttonText="Jetzt reservieren">
-</div>
+<div id="resmio-test-335"></div>
 <script src="script.js"></script>
+<script data-resmio-menu="test-335">
+(function (d) {
+   var src = "//static.resmio.com/static/de/menu.js";
+   var el = d.querySelector("script[src='" + src + "']");
+   if (el) return;
+   el = d.createElement("script");
+   el.src = src;
+   el.async = true;
+   d.body.appendChild(el);
+})(document);
+</script>
 </body>
 </html>
